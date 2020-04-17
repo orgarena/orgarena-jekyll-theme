@@ -29,7 +29,10 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto Slab', serif;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
   line-height: 1.5;
   color: $body-text-color;
@@ -64,8 +67,9 @@ a {
 
 .btn {
   display: inline-block;
+  font-family: 'Source Sans Pro', sans-serif;
   color: #fff !important;
-  background-color: #1d8495 !important;
+  background-color: $orga1-petrol !important;
   border-radius: 64px !important;
   padding: 4px 20px 4px 20px !important;
   text-decoration: none;
@@ -102,13 +106,19 @@ a {
 }
 
 .page-header {
+  position: relative;
+  z-index: 1;
   color: $header-heading-color;
+  font-family: 'Source Sans Pro', sans-serif;
   text-align: center;
   background-color: $header-bg-color;
   background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
+  -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
 
   @include large {
-    padding: 5rem 6rem;
+    padding: 4rem 6rem;
   }
 
   @include medium {
@@ -164,18 +174,18 @@ a {
 
   @include large {
     max-width: 64rem;
-    padding: 2rem 6rem;
+    padding: 4rem 6rem 0 6rem;
     margin: 0 auto;
     font-size: 1.1rem;
   }
 
   @include medium {
-    padding: 2rem 4rem;
+    padding: 2rem 4rem 0 4rem;
     font-size: 1.1rem;
   }
 
   @include small {
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 0 1rem;
     font-size: 1rem;
   }
   
@@ -209,7 +219,29 @@ a {
     color: $section-headings-color;
   }
   h1 {
-    font-size: 1.8em;
+    font-size: 2rem;
+    color: #000;
+    font-weight: 900;
+  }
+  h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.8rem;
+    color: $orga1-petrol;
+    font-weight: 400;
+  }
+  h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.5rem;
+    color: $orga1-petrol;
+    font-weight: 400;
+  }
+  h4,
+  h5,
+  h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2rem;
+    color: $orga1-petrol;
+    font-weight: 400;
   }
 
   p {
@@ -351,9 +383,13 @@ a {
 }
 
 .site-footer {
-  padding-top: 2rem;
-  margin-top: 2rem;
-  border-top: solid 1px $hr-border-color;
+  padding-top: .6rem;
+  padding-left: 3.5rem;
+  padding-bottom: 1rem;
+  margin-top: 3rem;
+  margin-left: -3.5rem;
+  background-image: url(/assets/img/footer_deko.svg);
+  background-repeat: no-repeat;
 
   @include large {
     font-size: 1rem;
@@ -368,11 +404,25 @@ a {
   }
 }
 
-.site-footer-owner {
+.site-footer-title {
+  font-size: 1rem;
   display: block;
-  font-weight: bold;
+  color: #C4E2E7;
+  font-weight: 900;
 }
 
-.site-footer-credits {
-  color: $blockquote-text-color;
+.site-footer-site-title {
+  font-size: .8rem;
+  display: block;
+  color: #1E8496;
+  font-weight: 700;
+  font-family: 'Roboto Slab', serif;
+}
+
+.site-footer-site-description {
+  font-size: .8rem;
+  display: block;
+  color: #C4E2E7;
+  font-weight: 400;
+  font-family: 'Roboto Slab', serif;
 }

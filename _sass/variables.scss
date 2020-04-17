@@ -2,22 +2,33 @@
 $large-breakpoint: 64em;
 $medium-breakpoint: 42em;
 
+// Colors
+$orga1-petrol: #1e8496;
+$orga2-tint: #879996;
+$orga3-dunkel: #484747;
+$orga4-taupe: #30636e;
+$orga5-hell: #c4e2e7;
+$orga6-orange: #e65e0e;
+
+$orga7-hellorange: #f09f00;
+$orga8-gruen: #93c353;
+
 // Headers
 $header-heading-color: #fff;
-$header-bg-color: #2E626D;
-$header-bg-color-secondary: #2E626D;
+$header-bg-color: $orga4-taupe;
+$header-bg-color-secondary: $orga4-taupe;
 
 // Text
 $section-headings-color: #1d6d7e;
-$body-text-color: #1d3540;
-$body-link-color: #208596;
-$blockquote-text-color: #1d3540;
+$body-text-color: #000;
+$body-link-color: $orga1-petrol;
+$blockquote-text-color: $orga4-taupe;
 
 // Code
 $code-bg-color: #f3f6fa;
-$code-text-color: #567482;
+$code-text-color: $orga4-taupe;
 
 // Borders
-$border-color: #caeae9;
-$table-border-color: #caeae9;
-$hr-border-color: #caeae9;
+$border-color: $orga5-hell;
+$table-border-color: $orga5-hell;
+$hr-border-color: $orga5-hell;
