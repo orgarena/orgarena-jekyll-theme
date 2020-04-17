@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |s|
-  s.name          = 'jekyll-theme-orgarena'
+  s.name          = 'orgarena-jekyll-theme'
   s.version       = '1.0.0'
   s.authors       = ['Tobias Bruns', 'ORGArena GmbH']
   s.email         = ['info@orgarena.de']

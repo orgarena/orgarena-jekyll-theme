@@ -1,2 +1,2 @@
-# jekyll-theme-orgarena
+# orgarena-jekyll-theme
 Default ORGArena Jekyll Theme
