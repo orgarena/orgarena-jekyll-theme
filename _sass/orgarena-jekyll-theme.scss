@@ -118,16 +118,34 @@ a {
   box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
 
   @include large {
-    padding: 4rem 6rem;
+    padding: 4rem 13rem;
   }
 
   @include medium {
-    padding: 3rem 4rem;
+    padding: 3rem 6rem 3rem 11rem;
   }
 
   @include small {
-    padding: 2rem 1rem;
+    padding: 1rem 1rem 2rem 1rem;
   }
+}
+
+.logo {
+  @include large {
+    max-width: 140px;
+    position: absolute;
+    top: 4rem;
+    left: 3rem;  }
+
+  @include medium {
+    max-width: 112px;
+    position: absolute;
+    top: 2.9rem;
+    left: 3rem;  }
+
+  @include small {
+    max-width: 100px;
+    position: relative; }
 }
 
 .project-name {
